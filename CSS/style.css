@@ -1,0 +1,197 @@
+*{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+a{
+	text-decoration: none;
+}
+body{
+	font-family: 'Fira Sans', sans-serif;
+}
+
+header{
+	font-size: 1rem;
+	text-align: center;
+	background:#0000cc;
+	padding: 0.6rem;
+	color: cyan;
+}
+nav{
+	background: #0099ff;
+}
+nav ul{
+	list-style-type: none;
+	display: flex;
+	flex-flow: column nowrap;
+	justify-content: center;
+	color: white;
+	text-align: center;
+}
+nav ul a{
+	padding: 1rem;
+	display: block;
+	font-weight: bold;
+	transition: 0.3s;
+	color: white;
+}
+
+.tartalom{
+	max-width: 1300px;
+	margin: 0px auto;
+	display: flex;
+	flex-direction: column;
+}
+.szoveg{
+	padding: 10px;
+}
+.szoveg p{
+	margin-bottom: 1rem;
+}
+.szoveg h3, .szoveg h2{
+	margin: 0.5rem 0;
+}
+aside{
+	padding: 10px;
+	flex-shrink: 0.5;
+}
+aside img{
+	width: 100%;
+}
+aside figcaption{
+	color: grey;
+}
+.galeriahoz-gomb{
+	width: 100%;
+	display: block;
+	color: white;
+	font-weight: bold;
+	font-size: 1.5rem;
+ 	background: #0099ff;
+	padding: 0.5rem;
+	text-align: center;
+	margin-top: 0.5rem;
+	transition: 0.3s;
+}
+.kuldesgomb{
+	max-width: 300px;
+	cursor:pointer;
+	border: none;
+	margin: 10px;
+}
+.kuldes-flex{
+	display: flex;
+	justify-content: space-around;
+	flex-flow: row wrap;
+}
+.szoveg-input{
+	width: 100%;
+	padding: 0.5rem;
+	border-radius: 0px;
+	border: 3px solid #00c;
+	outline: none;
+	background: #ccd9ff;
+	color: #00c;
+	font-size: 1rem;
+	margin: 0.2rem 0;
+}
+.szoveg-input#szin{
+	padding: 0px;
+}
+input[type=range]{
+	width: 100%;
+}
+.mezocim{
+	padding-top: 0.4rem;
+	display: block;
+}
+footer{
+	font-size: 1.2rem;
+	text-align: center;
+	background:#0000cc;
+	color: white;
+	padding: 0.6rem;
+}
+footer a{
+	color: cyan;
+	padding: 0.2rem 0.4rem;
+}
+.elerhetosegek{
+	display: flex;
+	flex-flow: row wrap;
+	justify-content: center;
+}
+.footer-szoveg{
+	padding-bottom: 0.2rem;
+}
+.elerhetosegek{
+	display: flex;
+	flex-flow: row wrap;
+	justify-content: center;
+}
+
+nav ul a:hover, .galeriahoz-gomb:hover{
+	background: #008ae6
+}
+nav ul a:active, .galeriahoz-gomb:active{
+	background: #007acc;
+	color: white;
+}
+.kviz-tarto{
+	padding: 0.5rem 1rem;
+	background: #fff0b3;
+	border: 3px solid #e6b800;
+	display: none;
+}
+.helyes-valaszok{
+	width: 100%;
+	display: block;
+	color: #0099ff;
+	font-weight: bold;
+	font-size: 1.5rem;
+	padding: 0.5rem;
+	text-align: center;
+	margin-top: 0.5rem;
+	max-width: 300px;
+	border: 3px solid #0099ff;
+	margin: 10px;
+}
+.lehetosegtarto{
+	padding: 0.5rem;
+	margin: 0.5rem 0;
+	border-radius: 5px;
+}
+label, input[type=radio]{
+	cursor: pointer;
+}
+.helyesValasz{
+	background: #c1f0c1;
+	padding: 0.5rem;
+	margin: 0.5rem 0;
+	border: 3px solid #6fdc6f;
+	border-radius: 5px;
+	display: none;
+}
+
+@media only screen and (min-width: 600px){
+	nav ul{
+		flex-flow: row wrap;
+	}
+	header{
+		font-size: 1.2rem;
+	}
+	
+}
+
+@media all and (min-width: 768px) {
+	.tartalom{
+		flex-direction: row;
+	}
+	.szoveg{
+		flex-basis: 75%;
+	}
+	aside{
+		flex-basis: 25%;
+	}
+	
+}

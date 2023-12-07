@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="hu">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta name="author" content="Harmatha Bercel">
+	<meta name="description" content="Információ a Budapesten közlekedő buszjáratokról">
+	<title>Budapest tömegközlekedése</title>
+	<link href="https://fonts.googleapis.com/css2?family=Fira+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+	<link rel="stylesheet" href="CSS/style.css">
+	<link rel="icon" href="Kepek/favicon.jpg" type="image/x-icon">
+	<script src="JavaScript/jquery-3.7.1.min.js"></script>
+</head>
+<body>
+	<header>
+		<h1>Budapest tömegközlekedése</h1>
+	</header>
+	<nav>
+		<ul>
+			<li><a href="index.html">Buszok</a></li>
+			<li><a href="villamosok.html">Villamosok</a></li>
+			<li><a href="trolik.html">Trolik</a></li>
+			<li><a href="metrok.html">Metrók</a></li>
+			<li><a href="kepek.html">Képek</a></li>
+			<li><a href="kviz.html">Kvíz</a></li>
+			<li><a href="menetrend.html">Menetrendlekérdezés</a></li>
+		</ul>
+	</nav>
+	<div class="tartalom">
+		<article class="szoveg">
+			<h2>Buszok</h2>
+
+			<p>Budapest autóbusz-hálózata helyi és helyközi viszonylatokból áll. Ezen belül megkülönböztethető alap-, betét-, expressz- és zónázó járat, illetve nappali és éjszakai járatok. A helyi viszonylatokat az ArrivaBus Kft. és a Budapesti Közlekedési Zrt., az agglomerációs és a helyközi viszonylatokat a Volánbusz Zrt. üzemelteti. A helyközi buszok számozása 300-tól 895-ig terjed.</p>
+			<h3>Alapjáratok</h3>
+			
+			<p>Az alapjáratok az útvonalukat érintő legtöbb megállóban megállnak. Viszonylatjelzésük betűt nem tartalmaz (például: 7, 178, 231).</p>
+			
+			<p>Kivételek: 2008 előtt egyes alapjáratok betűjelzést vagy nevet viseltek (pl. 7C, City, D), viszont ez a 2008-as paraméterkönyv bevezetésével megszűnt. Azóta mint menetrend szerinti (vagyis nem nosztalgia- vagy ideiglenes) járat, csak a 173G és az utódja, a 7G busz kapott a viszonylatszáma mellé betűt is. (A G betű a menetrend szerint utasokat szállító, garázsból ki- vagy beálló csonkameneteket jelöli.)</p>
+			<h3>Betétjáratok</h3>
+			
+			<p>A betétjáratok mindig egy alapjárathoz kapcsolódnak. A betétjáratokat A betűvel jelölik (például: 16A, 30A), ha rövidített útvonalon közlekednek, a viszonylat forgalmasabb szakaszán segítik az utazást. Azokat a járatokat, melyeknek útvonala kis mértékben eltér az alapjárattól, B betűvel jelzik, például: 101B, 194B. A mindenszentek környékén közlekedő temetői kiegészítő járatokat is B betűvel jelzik, például: 36B, 158B. Korábban betétjáratokat C, D, I és M betűvel is jelöltek.</p>
+			
+			<p>Kivétel: a 996A busz nem a 996-os busz rövidített útvonalán közlekedik, hanem ugyanazon két végállomás között, de a rákosszentmihályi szakaszon attól kissé eltérő útvonalon.</p>
+			<h3>Expresszjáratok</h3>
+			
+			<p>Az expresszjáratok (2008-ig gyorsjáratok) rendszerint csak az útvonalukba eső fontosabb, forgalmasabb megállókban állnak meg, ezzel rövidítve a menetidőt az utasok célhelyre való gyorsabb eljutása érdekében. Jelölése E betű (például: 7E, 200E). Azoknak a belvárost érintő, várost átszelő járatoknak a jelölése is E, melyek a vonal egy részén alapjáratként, a másik részén gyorsjáratként közlekednek (például: 8E, 133E).</p>
+			
+			<p>Kivételek: 2015 októberében, egy konferencia idején 100K és 200K jelzéssel közlekedtek expresszjáratok.</p>
+			<h3>Zónázó járatok</h3>
+			
+			<p>A zónázó járatok célja egy külső városrészben lakó utasok lehető leggyorsabb eljuttatása a város forgalmas közlekedési csomópontjaiba, jellemzően metróállomásokhoz. Ennek érdekében az általuk feltárt külső területen a megállók többségében vagy mindegyikében megállnak, míg a belsőbb, más járatokkal közös szakaszon az expresszjáratokhoz hasonlóan csak a főbb megállókban. Jelölésük szintén E betű (például: 20E, 97E), kivétel ez alól a 101B.</p>
+			
+			<h3>Múzeumjáratok</h3>
+			<p>A Múzeumok Éjszakája rendezvénysorozat idején múzeumi különjáratok közlekednek az egyes kiállítóhelyek között. Az MU jelzéssel ellátott járatokat 2018-tól vonaljegyekkel és bérletekkel is igénybe lehet venni.</p>
+			<h3>Éjszakai járatok</h3>
+			
+			<p>Az éjszakai járatok a nappali alapjáratokhoz képest hosszabb útvonalon közlekednek, jelzésük 900 és 999 közötti, például: 914, 950. Az éjszakai betétjáratok a nappali betétjáratokhoz hasonlóan A és B jelzést is viselnek, pl. 914A, 972B. Az 1980-as évektől 2005. szeptember 1-jéig a járatokat É betűvel látták el, például: 14É, 50É. Ez alól akkoriban kivétel volt a 956-os busz (2000 és 2005 között) és a 2002 szilveszterén közlekedő 973-as busz.</p>
+			
+			<p>Kivételek: a 200E busz éjjel-nappal közlekedik, továbbá a nappali járatok közül a 100E és a 168E busz jár az átlagnál hosszabb üzemidőben. </p>
+		</article>
+		<aside>
+			<figure>
+				<img src= "Kepek/busz.jpg" alt= "Fotó egy budapesti buszról." >
+				<figcaption>Fotó egy budapesti buszról. További képekért tekintsd meg galériánkat!</figcaption>
+			</figure>
+			<a class="galeriahoz-gomb" href="kepek.html">Ugrás a galériához</a>
+		</aside>
+	</div>
+	<footer>
+		<div class="footer-szoveg">Budapest tömegközlekedése - 2023</div>
+		<div class="elerhetosegek">
+			<a href="mailto:tomegkozlekedes@domain.hu">tomegkozlekedes@domain.hu</a>
+			<a href="#">Facebook-oldalunk</a>
+			<a href="#">Instagram-oldalunk</a>
+		</div>
+	</footer>
+</body>
+</html>

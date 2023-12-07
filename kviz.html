@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="hu">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta name="author" content="Harmatha Bercel">
+	<meta name="description" content="Információ Budapest metróhálózatáról">
+	<title>Budapest tömegközlekedése</title>
+	<link href="https://fonts.googleapis.com/css2?family=Fira+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+	<link rel="stylesheet" href="CSS/style.css">
+	<link rel="icon" href="Kepek/favicon.jpg" type="image/x-icon">
+	<script src="JavaScript/jquery-3.7.1.min.js"></script>
+	<script src="JavaScript/kviz.js"></script>
+</head>
+<body>
+	<header>
+		<h1>Budapest tömegközlekedése</h1>
+	</header>
+	<nav>
+		<ul>
+			<li><a href="index.html">Buszok</a></li>
+			<li><a href="villamosok.html">Villamosok</a></li>
+			<li><a href="trolik.html">Trolik</a></li>
+			<li><a href="metrok.html">Metrók</a></li>
+			<li><a href="kepek.html">Képek</a></li>
+			<li><a href="kviz.html">Kvíz</a></li>
+			<li><a href="menetrend.html">Menetrendlekérdezés</a></li>
+		</ul>
+	</nav>
+	<div class="tartalom">
+		<article class="szoveg">
+			<h2>Kvíz</h2>
+			<p id="keredes-leiras">Budapest tömegközlekedése rendkívül változatot, és számos érdekes információt lehet tudni róla. Minddel tisztában vagy? Összeállítottunk egy 5 kérdésből álló kérdéssort, amellyel letesztelheted tudásod. Időkorlát nincs, kezdéshez kattints a lenti gombra!</p>
+			<div class="kuldes-flex">
+				<button class="galeriahoz-gomb kuldesgomb" id="kviz-inditas">Kvíz indítása</button>
+			</div>
+			<div class="kviz-tarto">
+				<h3>1. kérdés</h3>
+				<p>Kérdés leírása</p>
+				<div class="helyesValasz"><strong>Gratulálunk!</strong> Előző válaszod helyes volt, így a következő kérdésre képtettünk.</div>
+				<div class="lehetosegtarto">
+					<input type="radio" name="kvizvalasz" id="lehetoseg1" value="lehetoseg1">
+					<label for="lehetoseg1">Akadálymentes</label>
+				</div>
+				<div class="lehetosegtarto">
+					<input type="radio" name="kvizvalasz" id="lehetoseg2" value="lehetoseg2">
+					<label for="lehetoseg2">Kerékpár szállítható</label><br>
+				</div>
+				<div class="lehetosegtarto">
+					<input type="radio" name="kvizvalasz" id="lehetoseg3" value="lehetoseg3">
+					<label for="lehetoseg3">Akadálymentes</label><br>
+				</div>
+				<div class="lehetosegtarto">
+					<input type="radio" name="kvizvalasz" id="lehetoseg4" value="lehetoseg4">
+					<label for="lehetoseg4">Kerékpár szállítható</label><br>
+				</div>
+				<div class="kuldes-flex">
+					<div class="helyes-valaszok">
+						<span>Próbálkozások száma: </span>
+						<span id="probalkozas-szam">0</span>
+					</div>
+					<button class="galeriahoz-gomb kuldesgomb" id="kviz-tovabbgomb">Következő kérdés</button>
+				</div>
+			</div>
+		</article>
+		<aside>
+			<figure>
+				<img src= "Kepek/busz.jpg" alt= "Fotó egy budapesti buszról." >
+				<figcaption>Fotó egy budapesti buszról. Amennyiben további fotókra is kíváncsi vagy, tekintsd meg képgalériánkat!</figcaption>
+			</figure>
+			<a class="galeriahoz-gomb" href="kepek.html">Ugrás a galériához</a>
+		</aside>
+	</div>
+	<footer>
+		<div class="footer-szoveg">Budapest tömegközlekedése - 2023</div>
+		<div class="elerhetosegek">
+			<a href="mailto:tomegkozlekedes@domain.hu">tomegkozlekedes@domain.hu</a>
+			<a href="#">Facebook-oldalunk</a>
+			<a href="#">Instagram-oldalunk</a>
+		</div>
+	</footer>
+	<script src="kviz.js"></script>
+</body>
+</html>

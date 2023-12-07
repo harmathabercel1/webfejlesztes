@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="hu">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta name="author" content="Harmatha Bercel">
+	<meta name="description" content="Képgaléria a budapesti tömegközlekedésről">
+	<title>Budapest tömegközlekedése</title>
+	<link href="https://fonts.googleapis.com/css2?family=Fira+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+	<link rel="stylesheet" href="CSS/style.css">
+	<link rel="icon" href="Kepek/favicon.jpg" type="image/x-icon">
+	<script src="JavaScript/jquery-3.7.1.min.js"></script>
+	<script src="galleria-1.6.1/dist/galleria.min.js"></script>
+	<script src="galleria-1.6.1/dist/themes/classic/galleria.classic.min.js"></script>
+	<script type="text/javascript">
+		$(document).ready(function () {
+			$('#images').galleria(
+				width = 500,
+				height = 500
+			);
+		});
+		
+	</script>
+	<style>
+		.galleria {
+			margin: auto;
+			width: 100vw;
+			height: 80vh;
+			max-width: 1300px;
+		}
+	</style>
+</head>
+<body>
+	<header>
+		<h1>Budapest tömegközlekedése</h1>
+	</header>
+	<nav>
+		<ul>
+			<li><a href="buszok.html">Buszok</a></li>
+			<li><a href="villamosok.html">Villamosok</a></li>
+			<li><a href="trolik.html">Trolik</a></li>
+			<li><a href="metrok.html">Metrók</a href="villamosok.html"></li>
+			<li><a href="kepek.html">Képek</a></li>
+			<li><a href="kviz.html">Kvíz</a></li>
+			<li><a href="menetrend.html">Menetrendlekérdezés</a></li>
+		</ul>
+	</nav>
+	<div class="albumtarto">
+		<article id="images" class="galleria">
+			<img src="Kepek/1.jpg" alt="Villamos, háttérben a Gellért-hegy" title="2-es villamos">
+			<img src="Kepek/2.jpg" alt="Villamos, háttérben a Parlament" title="2-es villamos">
+			<img src="Kepek/3.jpg" alt="Villamos, háttérben a Budai Vár" title="2-es villamos">
+			<img src="Kepek/4.jpg" alt="Villamos Budapesten." title="TW6000 típusú villamos">
+			<img src="Kepek/5.jpg" alt="Villamos a Szabadság hídon" title="49-es villamos">
+			<img src="Kepek/6.jpg" alt="Kisföldalatti indul az állomásról" title="Kisföldalatti">
+			<img src="Kepek/7.jpg" alt="Mozgólépcső a 2-es metró egyik állomásán" title="2-es metró">
+			<img src="Kepek/8.jpg" alt="212-es busz a Normafánál." title="212-es busz">
+			<img src="Kepek/9.jpg" alt="Mozgólépcső a 4-es metró egyik állomásán." title="4-es metró">
+		</article>
+	</div>
+	<footer>
+		<div class="footer-szoveg">Budapest tömegközlekedése - 2023</div>
+		<div class="elerhetosegek">
+			<a href="mailto:tomegkozlekedes@domain.hu">tomegkozlekedes@domain.hu</a>
+			<a href="#">Facebook-oldalunk</a>
+			<a href="#">Instagram-oldalunk</a>
+		</div>
+	</footer>
+</body>
+</html>

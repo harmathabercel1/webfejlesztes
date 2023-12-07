@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="hu">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta name="author" content="Harmatha Bercel">
+	<meta name="description" content="Információ Budapest metróhálózatáról">
+	<title>Budapest tömegközlekedése</title>
+	<link href="https://fonts.googleapis.com/css2?family=Fira+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+	<link rel="stylesheet" href="CSS/style.css">
+	<link rel="icon" href="Kepek/favicon.jpg" type="image/x-icon">
+	<script src="JavaScript/jquery-3.7.1.min.js"></script>
+	<script src="jquery-validation-1.19.5/dist/jquery.validate.min.js"></script>
+	<script>
+		$(document).ready(function(){
+			$("#urlap").validate({
+				rules: {
+					eszkoz: "required",
+					jaratszam: {
+						required: true,
+						number: true
+					},
+					nap: "required",
+					indulas: "required",
+					szin: "required",
+					email: {
+						required: true,
+						email: true
+					},
+					
+				}, messages: {
+					eszkoz: "Kérlek, add meg, milyen közlekedési eszközt választanál!",
+					jaratszam: {
+						required: "Kérlek, add meg, melyik busz menetrendjét szeretnéd tudni!",
+						number: "Kérlek, valós járatszámot adj meg!"
+					},
+					nap: "Kérlek, add meg, melyik napon vagy kíváncsi a menetrendre!",
+					indulas: "Kérlek, add meg, meikor vagy kíváncsi az indulásokra!",
+					szin: "Kérlek, add meg, milyen színben kéred a menetrendet!",
+					email: {
+						required: "Kérlek, adj meg ímélcímet!",
+						email: "Kérlek, valós ímélcímet adj meg!"
+					},
+				},
+			});
+		});
+	</script>
+	<style>
+		label.error {
+			color: red;
+		}
+	</style>
+</head>
+<body>
+	<header>
+		<h1>Budapest tömegközlekedése</h1>
+	</header>
+	<nav>
+		<ul>
+			<li><a href="index.html">Buszok</a></li>
+			<li><a href="villamosok.html">Villamosok</a></li>
+			<li><a href="trolik.html">Trolik</a></li>
+			<li><a href="metrok.html">Metrók</a></li>
+			<li><a href="kepek.html">Képek</a></li>
+			<li><a href="kviz.html">Kvíz</a></li>
+			<li><a href="menetrend.html">Menetrendlekérdezés</a></li>
+		</ul>
+	</nav>
+	<div class="tartalom">
+		<article class="szoveg">
+			<h2>Menetrend lekérdezése</h2>
+			<form action="http://szamtud.uni-corvinus.hu/receive.php" method="post" id="urlap" novalidate>
+				<label for="eszkoz" class="mezocim">Közlekedési eszköz</label>
+				<select id="eszkoz" name="eszkoz" size="1" class="szoveg-input">
+					<option value="busz">Busz</option>
+					<option value="metro">Metró</option>
+					<option value="villamos">Villamos</option>
+					<option value="troli">Trolibusz</option>
+				</select>
+				<label for="jaratszam" class="mezocim">Járat száma</label>
+				<input type="number" placeholder="pl. 22" id="jaratszam" name="jaratszam" class="szoveg-input">
+				<label for="nap" class="mezocim">Mely napon vagy kíváncsi a menetrendre?</label>
+				<input type="date" id="nap" name="nap" class="szoveg-input">
+				<label for="indulas" class="mezocim">Mikor indulnál el?</label>
+				<input type="time" id="indulas" name="indulas" class="szoveg-input">
+				<label for="szin" class="mezocim">Milyen színben jelenítsük meg a menetrendet?</label>
+				<input type="color" id="szin" name="szin" class="szoveg-input">
+				<label for="email" class="mezocim">Ímélcímed</label>
+				<input type="email" id="email" name="email" class="szoveg-input" placeholder="kiss.janos@gmail.com">
+				<div class="mezocim">Különleges igények</div>
+				<input type="checkbox" name="kuligeny[]" value="akadalymentes" id="akadalymentes">
+				<label for="akadalymentes">Akadálymentes</label><br>
+				<input type="checkbox" name="kuligeny[]" id="kerekpar" value="kerekpar">
+				<label for="kerekpar">Kerékpár szállítható</label><br>
+				<label for="mennyiseg" class="mezocim">Mennyi indulást jelenítsünk meg?</label>
+				<input type="range" id="mennyiseg" name="mennyiseg" min="1" max="20" step ="1" value="10">
+				<div class="kuldes-flex">
+					<input type="reset" class="galeriahoz-gomb kuldesgomb" value="Alaphelyzet">
+					<button type="submit" class="galeriahoz-gomb kuldesgomb">Menetrend lekérdezése</button>
+				</div>
+				
+			</form>
+		</article>
+		<aside>
+			<figure>
+				<img src= "Kepek/busz.jpg" alt= "Fotó egy budapesti buszról." >
+				<figcaption>Fotó egy budapesti buszról. Amennyiben nem csak a menetrend érdekel, tekintsd meg képgalériánkat!</figcaption>
+			</figure>
+			<a class="galeriahoz-gomb" href="kepek.html">Ugrás a galériához</a>
+		</aside>
+	</div>
+	<footer>
+		<div class="footer-szoveg">Budapest tömegközlekedése - 2023</div>
+		<div class="elerhetosegek">
+			<a href="mailto:tomegkozlekedes@domain.hu">tomegkozlekedes@domain.hu</a>
+			<a href="#">Facebook-oldalunk</a>
+			<a href="#">Instagram-oldalunk</a>
+		</div>
+	</footer>
+</body>
+</html>
