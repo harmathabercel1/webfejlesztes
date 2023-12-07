@@ -2,7 +2,7 @@
 
 Készítő: Harmatha Bercel
 
-URL: ?
+URL: https://harmathabercel1.github.io/webfejlesztes/
 
 Leírás: A weboldal a budapesti tömegközlekededéssel foglalkozik, arról ír érdekes információkat, emellett pedig lehetőség van menetrend "lekérdezésére" is. Az oldalhoz tartozik még egy fotógaléria és egy kvíz, ahol le tudjuk tesztelni tudásunkat.
 
